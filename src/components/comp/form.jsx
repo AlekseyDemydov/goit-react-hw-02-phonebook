@@ -43,10 +43,11 @@ class Form extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmitForm}>
+      <form onSubmit={this.handleSubmitForm} className={styles.form}>
         <label className={styles.label}>
           Name
           <input
+            className={styles.input}
             type="text"
             value={this.state.name}
             onChange={this.handleChange}
@@ -59,11 +60,12 @@ class Form extends React.Component {
         <label className={styles.label}>
           Number
           <input
+            className={styles.input}
             type="tel"
             value={this.state.number}
             onChange={this.handleChange}
             name="number"
-            // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
           />

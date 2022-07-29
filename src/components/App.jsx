@@ -25,7 +25,7 @@ export class App extends Component {
   render() {
     return (
       <div className={styles.box}>
-        <div>
+        <div className={styles.boxPhone}>
           <h1>Phonebook</h1>
           <Form
             contacts={this.state.contacts}
@@ -34,7 +34,7 @@ export class App extends Component {
           <h2>find contacts by name</h2>
           <Filter handleChange={this.handleChange} />
         </div>
-        <div>
+        <div className={styles.contacts}>
           <h2>Contacts</h2>
           <FormList
             filter={this.state.filter}
