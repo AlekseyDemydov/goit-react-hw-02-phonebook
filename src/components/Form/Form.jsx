@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { nanoid } from 'nanoid';
-import styles from '../css/input.module.css';
+import styles from './Form.module.css';
 
 class Form extends React.Component {
   state = {
@@ -28,7 +28,9 @@ class Form extends React.Component {
       number,
     };
 
-    const check = contacts.find(el => el.name === name);
+    const check = contacts.find(
+      el => el.name.toLowerCase() === name.toLowerCase()
+    );
     if (!check) {
       handleSubmit(obj);
       this.reset();

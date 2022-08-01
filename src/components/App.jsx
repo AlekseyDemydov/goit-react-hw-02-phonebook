@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import Form from './comp/form';
-import FormList from './comp/formList';
-import Filter from './comp/filter';
-import styles from './css/input.module.css';
+import Form from './Form/Form';
+import FormList from './Form/formList';
+import Filter from './Filter/Filter';
+import styles from '../components/Form/Form.module.css';
 export class App extends Component {
   state = {
     contacts: [],
@@ -31,8 +31,11 @@ export class App extends Component {
             contacts={this.state.contacts}
             handleSubmit={this.handleSubmit}
           />
-          <h2>find contacts by name</h2>
-          <Filter handleChange={this.handleChange} />
+
+          <Filter
+            title="Find contacts by name"
+            handleChange={this.handleChange}
+          />
         </div>
         <div className={styles.contacts}>
           <h2>Contacts</h2>
