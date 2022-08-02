@@ -1,11 +1,4 @@
-.box{
-    display: flex;
-   
-  
-    margin: 25px auto;
-    justify-content: center;
 
-}
 .label{
     display: flex;
         flex-direction: column;
@@ -20,18 +13,8 @@ border-right: none;
 background-color: aqua;
    
 }
-.boxPhone{
-    margin-right: 40px;
-    background-color: aqua;
-    padding: 60px;
-  
-}
-.contacts{
-    background-color: rgb(119, 232, 116);
-    padding: 60px;
-    width: 180px;
-/* text-align: center; */
-}
+
+
 .form{
     display: flex;
         flex-direction: column;
@@ -40,19 +23,4 @@ background-color: aqua;
 li{
     list-style: none;
 }
-.con{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    text-align: left;
-}
-.btn{
-    margin-left: 10px;
-    padding: 2px 6px;
-}
-.conName{
-    margin: 0;
-}
-.contact{
-    padding: 0;
-}
+

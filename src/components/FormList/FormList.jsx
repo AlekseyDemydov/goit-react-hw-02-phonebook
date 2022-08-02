@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './Form.module.css';
+import styles from './FormList.module.css';
 
 const FormList = ({ filter, contacts, handleDeleteContacts }) => {
   return (

@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import Form from './Form/Form';
-import FormList from './Form/formList';
+import FormList from '../components/FormList/FormList';
 import Filter from './Filter/Filter';
-import styles from '../components/Form/Form.module.css';
+import styles from './App.module.css';
+
 export class App extends Component {
   state = {
     contacts: [],
